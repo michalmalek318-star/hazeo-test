@@ -1,2 +1,6 @@
+# Domena testowa: indeksowanie blokuje meta robots "noindex" w HTML.
+# Crawling musi być dozwolony, żeby Google zobaczył noindex.
+# Na produkcji odkomentuj linię Sitemap.
 User-agent: *
-Disallow: /
+Allow: /
+# Sitemap: https://hazeo.pl/sitemap.xml

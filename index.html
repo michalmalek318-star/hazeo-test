@@ -1,308 +1,639 @@
 <!doctype html>
-<html lang="pl">
+<html lang="pl" class="no-js">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0a0a0b">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <script>document.documentElement.className = 'js';</script>
+  <title>Generowanie leadów B2B i pozyskiwanie klientów | HAZEO</title>
+  <meta name="description" content="Hazeo Engine – system AI do generowania leadów B2B i B2C: wyszukiwanie decydentów, cold mailing, lead scoring i CRM. Umów bezpłatną analizę.">
+  <!-- Domena testowa: zostaw noindex. Na produkcji zamień na: index, follow, max-image-preview:large -->
   <meta name="robots" content="noindex, nofollow">
-  <title>HAZEO | Marketing, który uruchamia wzrost</title>
-  <meta name="description" content="HAZEO łączy strategię, kampanie i automatyzację w jeden system pozyskiwania klientów B2B i B2C.">
-  <meta property="og:title" content="HAZEO | Marketing, który uruchamia wzrost">
-  <meta property="og:description" content="Pozyskujemy klientów, docieramy do decydentów i zamieniamy marketing w powtarzalny system sprzedaży.">
-  <meta property="og:image" content="assets/hazeo-acceleration-hero.png">
+  <link rel="canonical" href="https://hazeo.pl/">
+  <meta name="theme-color" content="#111217">
+  <meta name="author" content="HAZEO">
+
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0b'/%3E%3Crect x='12' y='12' width='8' height='40' fill='%23f2f1ec'/%3E%3Crect x='44' y='22' width='8' height='30' fill='%23f2f1ec'/%3E%3Crect x='44' y='12' width='8' height='10' fill='%2374B8A0'/%3E%3Cpath d='M20 34 L44 22 L44 30 L20 42 Z' fill='%23CBA35C'/%3E%3C/svg%3E">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="HAZEO">
+  <meta property="og:title" content="Hazeo Engine – generowanie leadów B2B i B2C z AI">
+  <meta property="og:description" content="Znajdujemy firmy i decydentów, weryfikujemy leady i prowadzimy spersonalizowany outreach. Twój handlowiec dostaje ciepłego leada.">
+  <meta property="og:url" content="https://hazeo.pl/">
+  <meta property="og:image" content="https://www.test.hazeo.pl/assets/og-hazeo.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Hazeo Engine – generowanie leadów B2B i B2C">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Playfair+Display:ital,wght@1,500&display=swap">
-  <link rel="preload" as="image" href="assets/hazeo-acceleration-hero.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "https://hazeo.pl/#org",
+        "name": "HAZEO",
+        "url": "https://hazeo.pl/",
+        "logo": { "@type": "ImageObject", "url": "https://www.test.hazeo.pl/assets/apple-touch-icon.png", "width": 180, "height": 180 },
+        "image": "https://www.test.hazeo.pl/assets/og-hazeo.jpg",
+        "description": "HAZEO to agencja lead generation w modelu AI-first, human-led. Hazeo Engine pozyskuje klientów B2B i B2C: prospecting, weryfikacja i scoring leadów, spersonalizowany outreach, CRM i przekazanie ciepłych leadów do sprzedaży.",
+        "email": "michalmalek@hazeo.pl",
+        "areaServed": { "@type": "Country", "name": "Polska" },
+        "address": { "@type": "PostalAddress", "addressCountry": "PL" },
+        "priceRange": "2500–18000+ PLN",
+        "knowsAbout": ["generowanie leadów B2B", "pozyskiwanie klientów B2B", "cold mailing", "lead scoring", "automatyzacja sprzedaży", "generowanie leadów B2C"],
+        "founder": [
+          { "@type": "Person", "name": "Michał Małek", "jobTitle": "Założyciel, CEO" },
+          { "@type": "Person", "name": "Konrad Potocki", "jobTitle": "Współzałożyciel, CMO" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://hazeo.pl/#engine",
+        "name": "Hazeo Engine",
+        "serviceType": "Lead generation",
+        "provider": { "@id": "https://hazeo.pl/#org" },
+        "areaServed": { "@type": "Country", "name": "Polska" },
+        "description": "System AI do generowania leadów B2B i B2C: wyszukiwanie firm i decydentów, wzbogacanie danych, lead scoring, sekwencje e-mail i LinkedIn, CRM, follow-up i przekazanie leada handlowcowi.",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Pakiety Hazeo",
+          "itemListElement": [
+            { "@type": "Offer", "name": "Start – Digital Foundation", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 2500, "maxPrice": 6000, "priceCurrency": "PLN", "valueAddedTaxIncluded": false } },
+            { "@type": "Offer", "name": "Grow – Marketing & Acquisition", "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": 4000, "maxPrice": 9000, "priceCurrency": "PLN", "unitText": "MONTH", "valueAddedTaxIncluded": false } },
+            { "@type": "Offer", "name": "Scale – AI Growth Partner", "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": 8000, "priceCurrency": "PLN", "unitText": "MONTH", "valueAddedTaxIncluded": false } }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://hazeo.pl/#website",
+        "url": "https://hazeo.pl/",
+        "name": "HAZEO",
+        "inLanguage": "pl-PL",
+        "publisher": { "@id": "https://hazeo.pl/#org" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://hazeo.pl/#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "Czym jest generowanie leadów B2B?", "acceptedAnswer": { "@type": "Answer", "text": "Generowanie leadów B2B to proces wyszukiwania firm i decydentów, którzy pasują do profilu Twojego idealnego klienta, oraz nawiązywania z nimi kontaktu. Obejmuje budowę bazy, weryfikację danych, spersonalizowany outreach, follow-upy i przekazanie zainteresowanych osób handlowcom. Celem są rozmowy sprzedażowe, a nie sama lista kontaktów." } },
+          { "@type": "Question", "name": "Ile kosztuje lead generation?", "acceptedAnswer": { "@type": "Answer", "text": "W HAZEO jednorazowy pakiet Start kosztuje 2 500–6 000 zł netto. Stała obsługa w pakiecie Grow to 4 000–9 000 zł netto miesięcznie, a w pakiecie Scale od 8 000 zł netto miesięcznie. Cena zależy od liczby rynków, wolumenu kampanii, kanałów i integracji z CRM. Wycenę przygotowujemy po krótkiej rozmowie." } },
+          { "@type": "Question", "name": "Czy cold mailing jest legalny w Polsce?", "acceptedAnswer": { "@type": "Answer", "text": "Kontakt B2B może być zgodny z prawem, jeśli prowadzi się go z poszanowaniem RODO i przepisów o komunikacji elektronicznej. Kierujemy wiadomości na adresy służbowe osób, których rola pasuje do tematu, nie wysyłamy oferty handlowej bez zgody, podajemy źródło danych i dajemy łatwą rezygnację. Szczegóły zawsze konsultujemy pod konkretną kampanię." } },
+          { "@type": "Question", "name": "Jak szybko zobaczę pierwsze leady?", "acceptedAnswer": { "@type": "Answer", "text": "Pierwsze tygodnie to definicja idealnego klienta, budowa i weryfikacja bazy oraz przygotowanie domen i komunikacji. Potem startują kampanie, które co tydzień optymalizujemy na podstawie odpowiedzi. Konkretny harmonogram i realne cele podajemy po analizie Twojego rynku, bo zależą od branży, oferty i wielkości bazy." } },
+          { "@type": "Question", "name": "Czym Hazeo Engine różni się od zwykłej agencji marketingowej?", "acceptedAnswer": { "@type": "Answer", "text": "Hazeo Engine łączy prospecting, wzbogacanie danych, lead scoring, spersonalizowane sekwencje i CRM w jeden proces nastawiony na rozmowy sprzedażowe, a nie na zasięgi czy kliknięcia. AI daje skalę, a strategię i jakość kontrolują ludzie z kilkunastoletnim doświadczeniem w sprzedaży B2B na 16 rynkach." } },
+          { "@type": "Question", "name": "Czy generujecie leady także dla firm B2C?", "acceptedAnswer": { "@type": "Answer", "text": "Tak. W modelu B2C przechwytujemy popyt dzięki landing page'om, kampaniom reklamowym i optymalizacji konwersji, a automatyzacja komunikacji pomaga zwiększać retencję i powtórne zakupy. Patrzymy na koszt pozyskania klienta, a nie na samą liczbę kliknięć, i stale testujemy oferty, kreacje oraz ścieżki zakupowe." } }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <a class="skip" href="#tresc">Przejdź do treści</a>
+  <a class="skip" href="#problem">Przejdź do treści</a>
+
+  <!-- Intro: kadr otwiera się jak w kinie -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-bar top"></div>
+    <div class="intro-bar bot"></div>
+    <div class="intro-title">Hazeo przedstawia<strong>HAZEO <span>ENGINE</span></strong></div>
+  </div>
 
   <header class="nav" id="nav">
-    <div class="nav-pill">
-      <a class="brand" href="#top" aria-label="HAZEO, początek strony"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><rect x="12" y="12" width="8" height="40" fill="currentColor"/><rect x="44" y="22" width="8" height="30" fill="currentColor"/><rect x="44" y="12" width="8" height="10" fill="#74B8A0"/><path d="M20 34 L44 22 L44 30 L20 42 Z" fill="#CBA35C"/></svg><span class="brand-word">HAZEO</span></a>
+    <div class="nav-bar">
+      <a class="brand" href="#top" aria-label="HAZEO, początek strony">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="12" y="12" width="8" height="40" fill="#DFE5EB"/><rect x="44" y="12" width="8" height="40" fill="#DFE5EB"/><path d="M20 36 L44 22 L44 30 L20 44 Z" fill="#EF233C"/></svg>
+        HAZEO
+      </a>
       <nav class="nav-links" aria-label="Główna nawigacja">
-        <a href="#oferta">Oferta</a><a href="#modele">B2B / B2C</a><a href="#proces">Proces</a><a href="#pakiety">Pakiety</a><a href="#opieka">Opieka</a>
+        <a href="#silnik">Hazeo Engine</a>
+        <a href="#b2b-b2c">B2B / B2C</a>
+        <a href="#cennik">Cennik</a>
+        <a href="#zespol">Zespół</a>
+        <a href="#faq">FAQ</a>
       </nav>
-      <a class="btn btn-sm" href="#kontakt">Umów rozmowę <span class="btn-ico" aria-hidden="true">↗</span></a>
+      <a class="btn btn-sm" href="#kontakt">Bezpłatna analiza <span class="arr" aria-hidden="true">→</span></a>
       <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><span></span></button>
     </div>
   </header>
 
   <div class="menu" id="menu" hidden>
     <nav aria-label="Menu mobilne">
-      <a href="#oferta">Oferta</a><a href="#modele">B2B / B2C</a><a href="#proces">Proces</a><a href="#pakiety">Pakiety</a><a href="#opieka">Opieka</a><a href="#kontakt">Umów rozmowę</a>
+      <a href="#silnik">Hazeo Engine</a>
+      <a href="#b2b-b2c">B2B / B2C</a>
+      <a href="#cennik">Cennik</a>
+      <a href="#zespol">Zespół</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt" class="red">Bezpłatna analiza</a>
     </nav>
   </div>
 
   <main id="top">
-    <section class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="hero-canvas" id="warp" aria-hidden="true"></canvas>
+      <div class="hero-meta" aria-hidden="true">
+        <span>Rolka 01 · Scena 00</span>
+        <span class="tc" id="timecode">00:00:00:00</span>
+      </div>
       <div class="wrap hero-inner">
-        <span class="pill">HAZEO, partner wzrostu</span>
-        <h1><span class="mask"><span>Twój biznes.</span></span><span class="mask"><span><em>Wyższy bieg.</em></span></span></h1>
-        <p class="hero-lead">Pozyskujemy klientów, docieramy do decydentów i zamieniamy marketing w powtarzalny system sprzedaży.</p>
-        <div class="hero-actions">
-          <a class="btn" href="#kontakt">Umów rozmowę <span class="btn-ico" aria-hidden="true">↗</span></a>
-          <a class="link" href="#oferta">Zobacz ofertę</a>
-        </div>
-      </div>
-    </section>
-
-    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Więcej dobrych leadów</span><b>✳</b><span>Lepsze rozmowy sprzedażowe</span><b>✳</b><span>Marketing, który pracuje</span><b>✳</b><span>AI-first, human-led</span><b>✳</b><span>Więcej dobrych leadów</span><b>✳</b><span>Lepsze rozmowy sprzedażowe</span><b>✳</b><span>Marketing, który pracuje</span><b>✳</b><span>AI-first, human-led</span><b>✳</b></div></div>
-
-    <section class="intro section" id="tresc">
-      <div class="wrap intro-grid">
-        <h2 class="rv-h">Nie więcej marketingu. Więcej ruchu do przodu.</h2>
-        <div class="intro-body">
-          <p class="scrub">Łączymy strategię, kampanie i automatyzację, żeby Twoja firma docierała do właściwych osób i prowadziła je od pierwszego kontaktu do decyzji.</p>
-          <p class="principle rv"><strong>AI-first, human-led.</strong> Sztuczna inteligencja przyspiesza pracę, analizuje dane i automatyzuje procesy. Strategia, kontrola jakości i odpowiedzialność zostają po naszej stronie.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="offer section" id="oferta">
-      <div class="wrap">
-        <header class="head">
-          <span class="pill">Oferta</span>
-          <h2 class="rv-h">Pięć filarów. <span class="soft">Jeden silnik wzrostu.</span></h2>
-          <p class="rv">Zamiast kilkunastu oderwanych usług pięć obszarów, które pracują razem.</p>
-        </header>
-        <div class="bento">
-          <article class="shell cell-lead rv"><div class="core">
-            <div class="cell-media" aria-hidden="true"></div>
-            <div class="cell-body">
-              <span class="tag">Główny wyróżnik</span>
-              <h3>AI Growth &amp; Lead Generation</h3>
-              <p>Pozyskiwanie klientów i wzrost sprzedaży.</p>
-              <ul class="ticks two"><li>AI-powered prospecting i wyszukiwanie firm</li><li>Segmentacja i targetowanie B2B</li><li>Dwa osobne modele akwizycji: B2B oraz B2C</li><li>Wzbogacanie danych i kwalifikacja leadów</li><li>Personalizowane kampanie e-mailowe i follow-upy</li><li>CRM, automatyzacje i optymalizacja konwersji</li></ul>
+        <p class="slate"><b>Hazeo Engine</b> <i>/</i> Generowanie leadów B2B i B2C</p>
+        <h1 id="hero-title">
+          <span class="line"><span>Twoi następni</span></span>
+          <span class="line"><span>klienci <span class="red">już istnieją.</span></span></span>
+          <span class="line"><span class="outline">My ich znajdziemy.</span></span>
+        </h1>
+        <div class="hero-sub">
+          <div>
+            <p class="lead">Hazeo Engine to system generowania leadów B2B i B2C oparty na AI. Znajduje firmy i decydentów, weryfikuje kontakty i prowadzi spersonalizowany outreach. Twój handlowiec dostaje ciepłego leada, gotowego do rozmowy.</p>
+            <div class="hero-actions">
+              <a class="btn btn-lg" href="#kontakt">Umów bezpłatną analizę <span class="arr" aria-hidden="true">→</span></a>
+              <a class="link" href="#silnik">Zobacz, jak działa silnik <span aria-hidden="true">↓</span></a>
             </div>
-          </div></article>
-          <article class="shell cell-brand rv"><div class="core">
-            <h3>Brand &amp; Creative</h3>
-            <p>Budowanie marki, która wyróżnia się na rynku.</p>
-            <ul class="ticks"><li>Rebranding i strategia marki</li><li>Identyfikacja wizualna i komunikacja</li><li>Social media i content marketing</li><li>Copywriting, korekta, tłumaczenia PL-EN</li><li>PR, influencer marketing, produkcja wideo</li><li>Materiały reklamowe B2B</li></ul>
-          </div></article>
-          <article class="shell cell-web rv"><div class="core">
-            <h3>Digital Experience</h3>
-            <p>Strony, które realizują cele biznesowe.</p>
-            <ul class="ticks"><li>Web design, UX/UI i prototypowanie</li><li>Strony firmowe, landing pages, serwisy B2B</li><li>Audyty istniejących stron</li><li>Szybkość, dostępność i konwersja</li><li>CMS i panele administracyjne</li><li>Integracje formularzy, CRM i analityki</li></ul>
-          </div></article>
-          <article class="shell cell-search rv"><div class="core">
-            <h3>AI Search &amp; Analytics</h3>
-            <p>Widoczność w wyszukiwarkach i decyzje oparte na danych.</p>
-            <ul class="ticks two"><li>Techniczne i treściowe audyty SEO</li><li>AI-assisted SEO i automatyzacja optymalizacji</li><li>Content strategy i klastry tematyczne</li><li>Analityka, tracking i raportowanie</li><li>Widoczność w wyszukiwarkach i odpowiedziach AI</li><li>Testy landing pages i optymalizacja konwersji</li></ul>
-          </div></article>
-          <article class="shell cell-events rv"><div class="core">
-            <h3>Events &amp; Partnerships</h3>
-            <p>Marketing cyfrowy połączony z relacjami biznesowymi.</p>
-            <ul class="ticks two"><li>Eventy i wydarzenia branżowe</li><li>Targi, konferencje, obsługa marketingowa</li><li>Współprace z influencerami i partnerami</li><li>Kampanie PR przed wydarzeniem</li><li>Pozyskiwanie kontaktów i follow-up po evencie</li></ul>
-          </div></article>
+          </div>
+          <ul class="trust" aria-label="Dlaczego HAZEO">
+            <li><b>12</b> lat w sprzedaży B2B</li>
+            <li><b>16</b> rynków otwartych osobiście</li>
+            <li><b>30%</b> konwersji na spotkania z decydentami</li>
+            <li>AI-first, <b>human-led</b></li>
+          </ul>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"></div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Generowanie leadów B2B</span><i>✕</i><span>Pozyskiwanie klientów</span><i>✕</i><span>Lead scoring</span><i>✕</i><span>Cold mailing</span><i>✕</i><span>CRM i follow-up</span><i>✕</i><span>Ciepłe leady</span><i>✕</i>
+        <span>Generowanie leadów B2B</span><i>✕</i><span>Pozyskiwanie klientów</span><i>✕</i><span>Lead scoring</span><i>✕</i><span>Cold mailing</span><i>✕</i><span>CRM i follow-up</span><i>✕</i><span>Ciepłe leady</span><i>✕</i>
+      </div>
+    </div>
+
+    <!-- ============ PROBLEM ============ -->
+    <section class="section" id="problem" aria-labelledby="problem-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="slate"><b>Scena 00</b> <i>/</i> Brzmi znajomo?</p>
+            <h2 class="display rv" id="problem-title">Pozyskiwanie leadów <span class="red">nie może</span> być loterią.</h2>
+          </div>
+          <p class="lead rv">Handlowcy mają czas, ale nie mają z kim rozmawiać. To nie problem ludzi, tylko brak systemu, który codziennie dowozi właściwe kontakty.</p>
+        </div>
+        <div class="pains">
+          <article class="glass pain rv">
+            <span class="num" aria-hidden="true">01</span>
+            <h3>Pipeline na kroplówce</h3>
+            <p>Leady przychodzą zrywami albo wcale. Miesiąc dobry, dwa słabe i nikt nie wie dlaczego.</p>
+          </article>
+          <article class="glass pain rv">
+            <span class="num" aria-hidden="true">02</span>
+            <h3>Outreach, który brzmi jak spam</h3>
+            <p>Masowe maile bez kontekstu. Niski open rate, zero odpowiedzi i spalona domena.</p>
+          </article>
+          <article class="glass pain rv">
+            <span class="num" aria-hidden="true">03</span>
+            <h3>Ciepły lead stygnie w skrzynce</h3>
+            <p>Ktoś odpisał „ciekawe”, ale nikt nie zadzwonił. Bez follow-upów i CRM klient trafia do konkurencji.</p>
+          </article>
+        </div>
+        <p class="verdict rv">Dlatego zbudowaliśmy <span class="red">silnik</span>, a nie kolejną kampanię.</p>
+      </div>
+    </section>
+
+    <!-- ============ ENGINE ============ -->
+    <section class="section engine" id="silnik" aria-labelledby="engine-title">
+      <div class="engine-pin" id="engine-pin">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="slate"><b>Hazeo Engine</b> <i>/</i> 5 scen</p>
+              <h2 class="display rv" id="engine-title">Hazeo Engine: system AI do <span class="red">pozyskiwania klientów</span></h2>
+            </div>
+            <p class="lead rv">Od pustej listy do umówionej rozmowy. Każda scena ma konkretny wynik, który widzisz w raporcie.</p>
+          </div>
+        </div>
+        <div class="sprockets" aria-hidden="true"></div>
+        <div class="strip-wrap">
+          <ol class="strip" id="strip" role="list">
+            <li class="glass frame">
+              <div class="frame-top"><b>Scena 01</b><span>00:01:12</span></div>
+              <div class="frame-visual" aria-hidden="true">
+                <svg viewBox="0 0 400 150" fill="none"><g stroke="#DFE5EB" stroke-opacity=".12"><path d="M0 30h400M0 75h400M0 120h400M80 0v150M160 0v150M240 0v150M320 0v150"/></g><circle cx="200" cy="75" r="56" stroke="#EF233C" stroke-opacity=".5"/><circle cx="200" cy="75" r="30" stroke="#EF233C" stroke-opacity=".8"/><path d="M200 5v140M130 75h140" stroke="#EF233C" stroke-opacity=".6"/><g fill="#DFE5EB" fill-opacity=".5"><circle cx="58" cy="40" r="3"/><circle cx="96" cy="112" r="3"/><circle cx="300" cy="34" r="3"/><circle cx="352" cy="96" r="3"/><circle cx="268" cy="126" r="3"/></g><circle class="pulse" cx="222" cy="58" r="6" fill="#EF233C"/></svg>
+              </div>
+              <h3>Namierzanie</h3>
+              <p>AI mapuje rynek i znajduje firmy oraz decydentów, którzy pasują do Twojego profilu idealnego klienta (ICP).</p>
+              <p class="out"><span>Output</span>Lista firm i decydentów zgodna z ICP</p>
+            </li>
+            <li class="glass frame">
+              <div class="frame-top"><b>Scena 02</b><span>00:02:40</span></div>
+              <div class="frame-visual" aria-hidden="true">
+                <svg viewBox="0 0 400 150" fill="none"><g font-family="JetBrains Mono, monospace" font-size="13"><rect x="40" y="22" width="320" height="28" rx="6" fill="#EF233C" fill-opacity=".16" stroke="#EF233C" stroke-opacity=".6"/><text x="56" y="41" fill="#DFE5EB">Lead · Dyrektor sprzedaży</text><text x="320" y="41" fill="#EF233C">A</text><rect x="40" y="61" width="320" height="28" rx="6" stroke="#DFE5EB" stroke-opacity=".2"/><text x="56" y="80" fill="#DFE5EB" fill-opacity=".7">Lead · Head of Growth</text><text x="320" y="80" fill="#DFE5EB">B</text><rect x="40" y="100" width="320" height="28" rx="6" stroke="#DFE5EB" stroke-opacity=".1"/><text x="56" y="119" fill="#DFE5EB" fill-opacity=".4">Lead · Brak dopasowania</text><text x="320" y="119" fill="#DFE5EB" fill-opacity=".4">C</text></g></svg>
+              </div>
+              <h3>Weryfikacja i scoring</h3>
+              <p>Sprawdzamy dane kontaktowe i oceniamy każdego leada, żeby zespół nie tracił czasu na przypadkowe kontakty.</p>
+              <p class="out"><span>Output</span>Zweryfikowana baza z priorytetami A/B/C</p>
+            </li>
+            <li class="glass frame">
+              <div class="frame-top"><b>Scena 03</b><span>00:04:05</span></div>
+              <div class="frame-visual" aria-hidden="true">
+                <svg viewBox="0 0 400 150" fill="none"><rect x="30" y="45" width="70" height="56" rx="8" stroke="#DFE5EB" stroke-opacity=".5"/><path d="M30 53l35 24 35-24" stroke="#DFE5EB" stroke-opacity=".5"/><path class="dash" d="M110 73h170" stroke="#EF233C" stroke-width="2"/><rect x="290" y="40" width="80" height="66" rx="10" fill="#EF233C" fill-opacity=".14" stroke="#EF233C"/><text x="330" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#DFE5EB">Re: ✓</text></svg>
+              </div>
+              <h3>Pierwszy kontakt</h3>
+              <p>Wieloetapowy, spersonalizowany outreach przez e-mail i LinkedIn. Każda wiadomość jest pisana pod konkretną firmę.</p>
+              <p class="out"><span>Output</span>Aktywne sekwencje i pierwsze odpowiedzi</p>
+            </li>
+            <li class="glass frame">
+              <div class="frame-top"><b>Scena 04</b><span>00:06:18</span></div>
+              <div class="frame-visual" aria-hidden="true">
+                <svg viewBox="0 0 400 150" fill="none"><g font-family="JetBrains Mono, monospace" font-size="11" fill="#DFE5EB" fill-opacity=".6"><text x="32" y="28">NOWY</text><text x="132" y="28">KONTAKT</text><text x="232" y="28">ROZMOWA</text><text x="322" y="28">GORĄCY</text></g><g stroke="#DFE5EB" stroke-opacity=".2"><rect x="28" y="40" width="80" height="26" rx="5"/><rect x="28" y="74" width="80" height="26" rx="5"/><rect x="28" y="108" width="80" height="26" rx="5"/><rect x="128" y="40" width="80" height="26" rx="5"/><rect x="128" y="74" width="80" height="26" rx="5"/><rect x="228" y="40" width="80" height="26" rx="5"/></g><rect x="318" y="40" width="64" height="26" rx="5" fill="#EF233C" fill-opacity=".25" stroke="#EF233C"/><rect class="pulse" x="228" y="74" width="80" height="26" rx="5" fill="#EF233C" fill-opacity=".2" stroke="#EF233C" stroke-opacity=".7"/></svg>
+              </div>
+              <h3>Follow-up i CRM</h3>
+              <p>Automatyczne follow-upy i porządek w CRM sprawiają, że żadna rozmowa nie urywa się w połowie.</p>
+              <p class="out"><span>Output</span>Uporządkowany pipeline ze statusami</p>
+            </li>
+            <li class="glass frame">
+              <div class="frame-top"><b>Scena 05</b><span>00:08:00</span></div>
+              <div class="frame-visual" aria-hidden="true">
+                <svg viewBox="0 0 400 150" fill="none"><circle cx="110" cy="75" r="34" stroke="#DFE5EB" stroke-opacity=".4"/><circle cx="110" cy="64" r="11" stroke="#DFE5EB" stroke-opacity=".7"/><path d="M90 96c4-12 36-12 40 0" stroke="#DFE5EB" stroke-opacity=".7"/><path class="dash" d="M152 75h96" stroke="#EF233C" stroke-width="2"/><circle cx="290" cy="75" r="40" fill="#EF233C" fill-opacity=".15" stroke="#EF233C"/><path d="M272 76l12 12 24-26" stroke="#DFE5EB" stroke-width="3"/></svg>
+              </div>
+              <h3>Przekazanie</h3>
+              <p>Ciepły lead trafia do Twojego handlowca razem z kontekstem rozmowy. Zostaje domknąć sprzedaż.</p>
+              <p class="out"><span>Output</span>Ciepły lead gotowy do spotkania</p>
+            </li>
+          </ol>
+          <div class="strip-progress" aria-hidden="true"><i id="strip-bar"></i></div>
+          <p class="strip-hint" aria-hidden="true">Przewiń, aby przejść przez sceny →</p>
         </div>
       </div>
     </section>
 
-    <section class="manifesto">
-      <div class="manifesto-image" aria-hidden="true"></div>
-      <div class="wrap manifesto-copy">
-        <h2 class="rv-h">Momentum nie bierze się z przypadku. <em>Buduje się je.</em></h2>
-        <p class="scrub">Najpierw znajdujemy właściwy kierunek. Potem uruchamiamy działania, mierzymy sygnały i wzmacniamy to, co naprawdę działa.</p>
-      </div>
-    </section>
-
-    <section class="models section" id="modele">
-      <div class="wrap models-grid">
-        <div class="models-head">
-          <h2 class="rv-h">B2B czy B2C? <span class="soft">Inny rynek, inny silnik.</span></h2>
-          <p class="rv">Każdy model ma własny przepływ pracy, własne wskaźniki i własne rozliczenie.</p>
+    <!-- ============ CTA band 1 ============ -->
+    <div class="band">
+      <div class="wrap">
+        <div class="glass band-inner rv">
+          <p class="display">Chcesz zobaczyć ten silnik <span class="red">na swoim rynku?</span></p>
+          <a class="btn btn-lg" href="#kontakt">Pokażcie mi moją ścieżkę <span class="arr" aria-hidden="true">→</span></a>
         </div>
-        <div class="models-list">
-          <article class="shell model rv"><div class="core">
-            <div class="model-top"><span class="model-code">B2B</span><span class="muted">Model A</span></div>
-            <h3>B2B Acquisition Engine</h3>
-            <p class="for">Firmy, dystrybutorzy, producenci, usługi profesjonalne</p>
-            <p>System wyszukuje potencjalnych klientów, ocenia ich dopasowanie do oferty i pomaga prowadzić spersonalizowany proces sprzedaży.</p>
-            <ol class="flow"><li>Wyszukiwanie firm i decydentów</li><li>Weryfikacja i scoring leadów</li><li>Personalizacja komunikacji i sekwencji kontaktu</li><li>CRM, follow-upy i przekazanie leada handlowcowi</li></ol>
-            <p class="bill"><span>Rozliczenie</span>Wdrożenie systemu i abonament za obsługę oraz optymalizację. Opcjonalnie premie za jasno zdefiniowane wyniki.</p>
-          </div></article>
-          <article class="shell model rv"><div class="core">
-            <div class="model-top"><span class="model-code">B2C</span><span class="muted">Model B</span></div>
-            <h3>B2C Growth Engine</h3>
+      </div>
+    </div>
+
+    <!-- ============ B2B / B2C ============ -->
+    <section class="section" id="b2b-b2c" aria-labelledby="models-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="slate"><b>Dwa tory</b> <i>/</i> Jeden silnik</p>
+            <h2 class="display rv" id="models-title">B2B czy B2C? <span class="outline">Inny rynek, inny tor.</span></h2>
+          </div>
+          <p class="lead rv">Każdy model ma własny przepływ pracy, własne wskaźniki i własne rozliczenie.</p>
+        </div>
+        <div class="models">
+          <article class="glass model rv" id="b2b">
+            <span class="model-code" aria-hidden="true">B2B</span>
+            <h3>Pozyskiwanie klientów B2B: prospecting, cold mailing i lead scoring</h3>
+            <p class="for">Producenci, dystrybutorzy, software house'y, usługi profesjonalne</p>
+            <ol>
+              <li>Wyszukiwanie firm i decydentów oraz wzbogacanie danych</li>
+              <li>Weryfikacja kontaktów i lead scoring</li>
+              <li>Spersonalizowane sekwencje e-mail i LinkedIn</li>
+              <li>CRM, follow-upy i przekazanie leada handlowcowi</li>
+            </ol>
+            <p class="bill"><strong>Rozliczenie:</strong> wdrożenie systemu i abonament za obsługę oraz optymalizację. Opcjonalnie premie za jasno zdefiniowane wyniki.</p>
+          </article>
+          <article class="glass model rv" id="b2c">
+            <span class="model-code" aria-hidden="true">B2C</span>
+            <h3>Generowanie leadów B2C: landing page, reklamy i optymalizacja konwersji</h3>
             <p class="for">Marki konsumenckie, e-commerce, usługi i lokalne biznesy</p>
-            <p>System pozyskuje popyt, zwiększa konwersję i pomaga utrzymywać klientów, żeby wracali po kolejne zakupy.</p>
-            <ol class="flow"><li>Analiza grup odbiorców, popytu i zachowań</li><li>Landing pages, treści i kreacje reklamowe</li><li>Kampanie, formularze i optymalizacja konwersji</li><li>Automatyzacje, retencja i ponowne zakupy</li></ol>
-            <p class="bill"><span>Rozliczenie</span>Miesięczna obsługa wzrostu, osobny budżet mediowy i wdrożenia automatyzacji.</p>
-          </div></article>
+            <ol>
+              <li>Analiza grup odbiorców, popytu i zachowań</li>
+              <li>Landing pages, treści i kreacje reklamowe</li>
+              <li>Kampanie, formularze i optymalizacja konwersji</li>
+              <li>Automatyzacje, retencja i ponowne zakupy</li>
+            </ol>
+            <p class="bill"><strong>Rozliczenie:</strong> miesięczna obsługa wzrostu, osobny budżet mediowy i wdrożenia automatyzacji.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="process section" id="proces">
+    <!-- ============ DELIVERABLES ============ -->
+    <section class="section" id="co-dostajesz" aria-labelledby="deliv-title">
       <div class="wrap">
-        <header class="head head-center">
-          <h2 class="rv-h">Trzy kroki. <span class="soft">Jasny kierunek.</span></h2>
-          <p class="rv">Bez wielomiesięcznych analiz. Z widocznym postępem co tydzień.</p>
-        </header>
-        <div class="stack">
-          <article class="stack-card" style="--i:0"><div class="stack-inner"><span class="stack-no">01</span><div><h3>Ustalamy cel</h3><p>Poznajemy ofertę, idealnego klienta i liczby, które mają znaczenie dla wzrostu.</p></div><span class="stack-out">Wychodzimy z kierunkiem</span></div></article>
-          <article class="stack-card" style="--i:1"><div class="stack-inner"><span class="stack-no">02</span><div><h3>Uruchamiamy silnik</h3><p>Budujemy kampanie, komunikację i proces kontaktu z potencjalnym klientem.</p></div><span class="stack-out">Pierwsze rozmowy w ruchu</span></div></article>
-          <article class="stack-card" style="--i:2"><div class="stack-inner"><span class="stack-no">03</span><div><h3>Wzmacniamy wynik</h3><p>Sprawdzamy jakość leadów, poprawiamy konwersję i skalujemy skuteczne kanały.</p></div><span class="stack-out">Więcej z tego, co działa</span></div></article>
+        <div class="section-head">
+          <div>
+            <p class="slate"><b>W kadrze</b> <i>/</i> Co dostajesz</p>
+            <h2 class="display rv" id="deliv-title">Konkret, <span class="red">nie mgła.</span></h2>
+          </div>
+          <p class="lead rv">Zamiast „usług marketingowych” dostajesz działające elementy systemu sprzedaży, które zostają w Twojej firmie.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="packages section" id="pakiety">
-      <div class="wrap">
-        <header class="head">
-          <span class="pill">Pakiety</span>
-          <h2 class="rv-h">Start. Grow. Scale. <span class="soft">Rośniesz we własnym tempie.</span></h2>
-          <p class="rv">Jednorazowy fundament albo stały abonament. Kwoty orientacyjne, netto.</p>
-        </header>
-        <div class="tiers">
-          <article class="shell tier rv"><div class="core">
-            <div class="tier-top"><span class="tier-name">Start</span><span class="muted">Jednorazowo</span></div>
-            <h3>Digital Foundation</h3>
-            <p class="price" data-count>2 500-6 000 <small>zł</small></p>
-            <p class="desc">Dla firm, które potrzebują uporządkować podstawy marketingu.</p>
-            <ul class="ticks"><li>Audyt strony i obecnej komunikacji</li><li>Podstawowa analityka i tracking</li><li>Plan SEO i marketingu</li><li>Lista priorytetowych działań</li><li>Konsultacja i rekomendacje</li></ul>
-            <a class="btn btn-ghost" href="#kontakt">Umów rozmowę <span class="btn-ico" aria-hidden="true">↗</span></a>
-          </div></article>
-          <article class="shell tier tier-main rv"><div class="core">
-            <div class="tier-top"><span class="tier-name">Grow</span><span class="tag">Główny produkt</span></div>
-            <h3>Marketing &amp; Acquisition</h3>
-            <p class="price" data-count>4 000-9 000 <small>zł / mies.</small></p>
-            <p class="desc">Dla firm, które chcą regularnie zdobywać klientów i rozwijać marketing.</p>
-            <ul class="ticks"><li>AI-assisted lead generation lub obsługa marketingowa</li><li>SEO, content i social media w ustalonym zakresie</li><li>Automatyzacja wybranych procesów</li><li>Raportowanie wyników</li><li>Miesięczny plan optymalizacji</li></ul>
-            <a class="btn" href="#kontakt">Umów rozmowę <span class="btn-ico" aria-hidden="true">↗</span></a>
-          </div></article>
-          <article class="shell tier rv"><div class="core">
-            <div class="tier-top"><span class="tier-name">Scale</span><span class="muted">Enterprise / B2B</span></div>
-            <h3>AI Growth Partner</h3>
-            <p class="price" data-count>8 000-18 000+ <small>zł / mies.</small></p>
-            <p class="desc">Dla firm potrzebujących zaawansowanej akwizycji i integracji technologicznych.</p>
-            <ul class="ticks"><li>Zaawansowany system pozyskiwania leadów</li><li>CRM i wieloetapowe workflow</li><li>Integracje IT i indywidualne automatyzacje</li><li>Analityka sprzedaży i optymalizacja konwersji</li><li>Strategiczne wsparcie rozwoju</li></ul>
-            <a class="btn btn-ghost" href="#kontakt">Umów rozmowę <span class="btn-ico" aria-hidden="true">↗</span></a>
-          </div></article>
-        </div>
-        <p class="fineprint rv">Nie obiecujemy określonej liczby leadów ani wzrostu sprzedaży, zanim nie mamy danych i warunków, które pozwalają wiarygodnie określić taki cel.</p>
-      </div>
-    </section>
-
-    <section class="care section" id="opieka">
-      <div class="wrap care-grid">
-        <div class="care-head">
-          <h2 class="rv-h">Twoja strona. <span class="soft">Twoje zasady.</span></h2>
-          <p class="rv">Nie musisz dzwonić do nas przy każdej zmianie tekstu. Wybierz poziom, który pasuje do Twojego zespołu.</p>
-          <p class="own rv"><strong>Wszystko zostaje Twoje.</strong> Hosting, domena i kluczowe konta należą do Ciebie, na przejrzystych zasadach i z dostępami dla nas. My dokładamy opiekę techniczną, SEO i optymalizację.</p>
-        </div>
-        <div class="shell care-box rv"><div class="core">
-          <div class="seg" role="tablist" aria-label="Poziom opieki nad stroną">
-            <button role="tab" id="t1" aria-controls="p1" aria-selected="true">Sam</button>
-            <button role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">Z nami</button>
-            <button role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1">Z AI</button>
-            <span class="seg-thumb" aria-hidden="true"></span>
-          </div>
-          <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
-            <span class="muted">Poziom 1, standard</span>
-            <h3>Klient zarządza sam</h3>
-            <p>Strona z CMS i własnym kontem administratora. Samodzielnie edytujesz treści, zdjęcia, blog i podstawowe elementy strony.</p>
-            <p class="bill"><span>My odpowiadamy za</span>Wdrożenie, szkolenie i wsparcie, gdy go potrzebujesz.</p>
-          </div>
-          <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
-            <span class="muted">Poziom 2, abonament</span>
-            <h3>My zarządzamy stroną</h3>
-            <p>Zlecasz zmianę, a my zajmujemy się resztą: aktualizacjami, poprawkami, publikacją treści i optymalizacją.</p>
-            <p class="bill"><span>My odpowiadamy za</span>Aktualizacje, bezpieczeństwo, monitoring i bieżące poprawki.</p>
-          </div>
-          <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
-            <span class="tag">Poziom 3, wyróżnik technologiczny</span>
-            <h3>AI-assisted Website Operations</h3>
-            <p>Zgłaszasz zmianę w prostym formularzu lub przez asystenta AI. System przygotowuje poprawkę, sprawdza ją i po Twojej akceptacji publikuje.</p>
-            <ol class="chips"><li>Zgłoszenie</li><li>Poprawka AI</li><li>Akceptacja</li><li>Publikacja</li></ol>
-            <p class="bill"><span>My odpowiadamy za</span>Nadzór nad procesem i trudniejsze zmiany.</p>
-          </div>
-        </div></div>
-      </div>
-    </section>
-
-    <section class="results section" id="efekty">
-      <div class="wrap">
-        <header class="head">
-          <h2 class="rv-h">Marketing z przełożeniem. <span class="soft">Bez magicznych skrótów.</span></h2>
-        </header>
-        <div class="results-grid">
-          <article class="shell res-main rv"><div class="core">
-            <span class="muted">Jakość</span>
-            <h3>Lepsze zapytania</h3>
-            <p>Mniej przypadkowych rozmów. Więcej kontaktów z potencjałem i budżetem.</p>
-          </div></article>
-          <article class="shell rv"><div class="core">
-            <span class="muted">Tempo</span>
-            <h3>Krótsza droga do decyzji</h3>
-            <p>Systematyczny follow-up utrzymuje rozmowę w ruchu i pomaga domykać sprzedaż.</p>
-          </div></article>
-          <article class="shell rv"><div class="core">
-            <span class="muted">Kontrola</span>
-            <h3>Wzrost, który widać</h3>
+        <div class="bento">
+          <article class="glass b-wide rv">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
+            <h3>Profil idealnego klienta i baza decydentów</h3>
+            <p>Definiujemy ICP, segmenty i persony. Budujemy bazę firm i osób decyzyjnych, wzbogacamy dane i odsiewamy kontakty bez potencjału.</p>
+          </article>
+          <article class="glass b-tall rv">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div>
+            <h3>Wynik, który widać</h3>
             <p>Wiesz, skąd przychodzą leady, co działa i gdzie warto zainwestować dalej.</p>
-          </div></article>
+            <p class="big" data-count="30" data-suffix="%">30%<small>konwersji na spotkania z decydentami w praktyce sprzedażowej naszego CEO</small></p>
+          </article>
+          <article class="glass b-third rv">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+            <h3>Sekwencje i copy</h3>
+            <p>Wieloetapowe wiadomości pisane pod branżę i rolę odbiorcy.</p>
+          </article>
+          <article class="glass b-third rv">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h6"/></svg></div>
+            <h3>CRM i automatyzacje</h3>
+            <p>Pipeline ze statusami, follow-upy i przekazanie leada handlowcowi.</p>
+          </article>
+          <article class="glass b-third rv">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></div>
+            <h3>Landing pages</h3>
+            <p>Strony i formularze nastawione na konwersję, z analityką.</p>
+          </article>
+          <article class="glass b-third rv">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+            <h3>Raport co tydzień</h3>
+            <p>Odpowiedzi, rozmowy, jakość leadów i plan optymalizacji.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="founder section" id="zespol" aria-labelledby="founder-label">
-      <div class="wrap"><span class="pill founder-pill" id="founder-label">Kto za tym stoi</span></div>
-      <div class="wrap founder-grid">
-        <figure class="founder-quote rv">
-          <blockquote>„Przez 12 lat otwierałem rynki zagraniczne bez działu eksportu za plecami. Wiem, ile kosztuje odpowiedź, która przychodzi za późno.”</blockquote>
-          <figcaption class="sign"><span class="sign-name">Michał Małek</span><span class="sign-role">Założyciel | CEO | Hazeo</span></figcaption>
-        </figure>
-        <ul class="founder-stats">
-          <li class="shell rv"><div class="core"><b data-to="16">16</b><span>rynków otwartych osobiście</span></div></li>
-          <li class="shell rv"><div class="core"><b data-to="12">12</b><span>lat w sprzedaży B2B</span></div></li>
-          <li class="shell rv"><div class="core"><b data-to="30" data-suffix="%">30%</b><span>konwersji na spotkania z decydentami</span></div></li>
-        </ul>
-      </div>
-      <div class="wrap founder-grid founder-flip">
-        <figure class="founder-quote rv">
-          <blockquote>„Od 9 lat buduję marki, do których klienci trafiają sami. Wiem, ile traci firma, której nie widać tam, gdzie są jej klienci.”</blockquote>
-          <figcaption class="sign"><span class="sign-name">Konrad Potocki</span><span class="sign-role">Współzałożyciel | CMO | Hazeo</span></figcaption>
-        </figure>
-        <ul class="founder-stats">
-          <li class="shell rv"><div class="core"><b data-to="9">9</b><span>lat w marketingu B2B i B2C</span></div></li>
-          <li class="shell rv"><div class="core"><b data-to="4">4</b><span>obszary w jednym ręku: SEO, UX/UI, social media, marka</span></div></li>
-          <li class="shell rv"><div class="core"><b data-to="12">12</b><span>rynków, na których budujemy kanały dla inwestorów</span></div></li>
-        </ul>
+    <!-- ============ PRICING ============ -->
+    <section class="section" id="cennik" aria-labelledby="pricing-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="slate"><b>Bilety</b> <i>/</i> Ceny netto</p>
+            <h2 class="display rv" id="pricing-title">Cennik lead generation: <span class="red">Start. Grow. Scale.</span></h2>
+          </div>
+          <p class="lead rv">Jednorazowy fundament albo stały abonament. Kwoty orientacyjne, netto. Dokładną wycenę dostajesz po bezpłatnej analizie.</p>
+        </div>
+        <div class="tiers">
+          <article class="glass tier rv">
+            <div class="tier-top"><span class="tier-name">Start</span><span class="badge">Jednorazowo</span></div>
+            <h3>Digital Foundation</h3>
+            <p class="price">2 500–6 000 <small>zł</small></p>
+            <p class="desc">Dla firm, które chcą uporządkować podstawy przed skalowaniem.</p>
+            <ul class="ticks">
+              <li>Audyt strony i obecnej komunikacji</li>
+              <li>Analityka i tracking</li>
+              <li>Definicja ICP i plan akwizycji</li>
+              <li>Lista priorytetowych działań</li>
+            </ul>
+            <a class="btn btn-ghost" href="#kontakt" data-plan="start">Zacznij od fundamentu <span class="arr" aria-hidden="true">→</span></a>
+          </article>
+          <article class="glass tier tier-main rv">
+            <div class="tier-top"><span class="tier-name">Grow</span><span class="badge">Najczęściej wybierany</span></div>
+            <h3>Marketing &amp; Acquisition</h3>
+            <p class="price">4 000–9 000 <small>zł / mies.</small></p>
+            <p class="desc">Dla firm, które chcą regularnie pozyskiwać klientów.</p>
+            <ul class="ticks">
+              <li>Hazeo Engine: prospecting i outreach B2B lub kampanie B2C</li>
+              <li>Lead scoring, CRM i follow-upy</li>
+              <li>SEO, content lub landing pages w ustalonym zakresie</li>
+              <li>Raport i plan optymalizacji co miesiąc</li>
+            </ul>
+            <a class="btn" href="#kontakt" data-plan="grow">Uruchom silnik <span class="arr" aria-hidden="true">→</span></a>
+          </article>
+          <article class="glass tier rv">
+            <div class="tier-top"><span class="tier-name">Scale</span><span class="badge">Enterprise / B2B</span></div>
+            <h3>AI Growth Partner</h3>
+            <p class="price">od 8 000 <small>zł / mies.</small></p>
+            <p class="desc">Dla firm, które potrzebują zaawansowanej akwizycji na wielu rynkach.</p>
+            <ul class="ticks">
+              <li>Wielorynkowy system pozyskiwania leadów</li>
+              <li>Wieloetapowe workflow i integracje IT</li>
+              <li>Analityka sprzedaży i optymalizacja konwersji</li>
+              <li>Strategiczne wsparcie founderów</li>
+            </ul>
+            <a class="btn btn-ghost" href="#kontakt" data-plan="scale">Porozmawiajmy o skali <span class="arr" aria-hidden="true">→</span></a>
+          </article>
+        </div>
+        <p class="fineprint rv">Nie obiecujemy określonej liczby leadów ani wzrostu sprzedaży, zanim nie mamy danych i warunków, które pozwalają wiarygodnie określić taki cel. Najpierw dane, potem prognoza.</p>
       </div>
     </section>
 
-    <section class="cta" id="kontakt">
-      <div class="cta-glow" aria-hidden="true"></div>
-      <div class="wrap cta-inner">
-        <h2 class="rv-h">Gotowi, by <em>ruszyć z miejsca?</em></h2>
-        <p class="rv">Porozmawiajmy o tym, co napędzi wzrost Twojej firmy.</p>
-        <a href="mailto:michalmalek@hazeo.pl" class="btn btn-lg rv">Umów rozmowę <span class="btn-ico" aria-hidden="true">↗</span></a>
+    <!-- ============ TEAM ============ -->
+    <section class="section" id="zespol" aria-labelledby="team-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="slate"><b>Obsada</b> <i>/</i> Human-led</p>
+            <h2 class="display rv" id="team-title">Zespół HAZEO. <span class="outline">Praktycy, nie teoretycy.</span></h2>
+          </div>
+          <p class="lead rv">AI daje skalę. Strategię, jakość i odpowiedzialność za wynik biorą na siebie ludzie, którzy sami latami sprzedawali.</p>
+        </div>
+        <div class="crew">
+          <article class="glass member rv">
+            <span class="role">Założyciel · CEO</span>
+            <h3 class="name">Michał Małek</h3>
+            <blockquote>„Przez 12 lat otwierałem rynki zagraniczne bez działu eksportu za plecami. Wiem, ile kosztuje odpowiedź, która przychodzi za późno.”</blockquote>
+            <ul class="stats">
+              <li><b data-count="12">12</b><span>lat w sprzedaży B2B</span></li>
+              <li><b data-count="16">16</b><span>rynków otwartych osobiście</span></li>
+              <li><b data-count="30" data-suffix="%">30%</b><span>konwersji na spotkania z decydentami</span></li>
+            </ul>
+          </article>
+          <article class="glass member rv">
+            <span class="role">Współzałożyciel · CMO</span>
+            <h3 class="name">Konrad Potocki</h3>
+            <blockquote>„Od 9 lat buduję marki, do których klienci trafiają sami. Wiem, ile traci firma, której nie widać tam, gdzie są jej klienci.”</blockquote>
+            <ul class="stats">
+              <li><b data-count="9">9</b><span>lat w marketingu B2B i B2C</span></li>
+              <li><b data-count="4">4</b><span>obszary: SEO, UX/UI, social media, marka</span></li>
+              <li><b data-count="12">12</b><span>rynków, na których budujemy kanały</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA band 2 ============ -->
+    <div class="band">
+      <div class="wrap">
+        <div class="glass band-inner rv">
+          <p class="display">15 minut z founderem. <span class="red">Konkret zamiast prezentacji.</span></p>
+          <a class="btn btn-lg" href="#kontakt">Zacznij od bezpłatnej analizy <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div>
+          <p class="slate"><b>Napisy</b> <i>/</i> FAQ</p>
+          <h2 class="display rv" id="faq-title">Najczęstsze pytania o <span class="red">generowanie leadów</span></h2>
+        </div>
+        <div class="faq-list">
+          <details class="glass" open>
+            <summary>Czym jest generowanie leadów B2B?</summary>
+            <div class="ans"><p>Generowanie leadów B2B to proces wyszukiwania firm i decydentów, którzy pasują do profilu Twojego idealnego klienta, oraz nawiązywania z nimi kontaktu. Obejmuje budowę bazy, weryfikację danych, spersonalizowany outreach, follow-upy i przekazanie zainteresowanych osób handlowcom. Celem są rozmowy sprzedażowe, a nie sama lista kontaktów.</p></div>
+          </details>
+          <details class="glass">
+            <summary>Ile kosztuje lead generation?</summary>
+            <div class="ans"><p>W HAZEO jednorazowy pakiet Start kosztuje 2 500–6 000 zł netto. Stała obsługa w pakiecie Grow to 4 000–9 000 zł netto miesięcznie, a w pakiecie Scale od 8 000 zł netto miesięcznie. Cena zależy od liczby rynków, wolumenu kampanii, kanałów i integracji z CRM. Wycenę przygotowujemy po krótkiej rozmowie.</p></div>
+          </details>
+          <details class="glass">
+            <summary>Czy cold mailing jest legalny w Polsce?</summary>
+            <div class="ans"><p>Kontakt B2B może być zgodny z prawem, jeśli prowadzi się go z poszanowaniem RODO i przepisów o komunikacji elektronicznej. Kierujemy wiadomości na adresy służbowe osób, których rola pasuje do tematu, nie wysyłamy oferty handlowej bez zgody, podajemy źródło danych i dajemy łatwą rezygnację. Szczegóły zawsze konsultujemy pod konkretną kampanię.</p></div>
+          </details>
+          <details class="glass">
+            <summary>Jak szybko zobaczę pierwsze leady?</summary>
+            <div class="ans"><p>Pierwsze tygodnie to definicja idealnego klienta, budowa i weryfikacja bazy oraz przygotowanie domen i komunikacji. Potem startują kampanie, które co tydzień optymalizujemy na podstawie odpowiedzi. Konkretny harmonogram i realne cele podajemy po analizie Twojego rynku, bo zależą od branży, oferty i wielkości bazy.</p></div>
+          </details>
+          <details class="glass">
+            <summary>Czym Hazeo Engine różni się od zwykłej agencji marketingowej?</summary>
+            <div class="ans"><p>Hazeo Engine łączy prospecting, wzbogacanie danych, lead scoring, spersonalizowane sekwencje i CRM w jeden proces nastawiony na rozmowy sprzedażowe, a nie na zasięgi czy kliknięcia. AI daje skalę, a strategię i jakość kontrolują ludzie z kilkunastoletnim doświadczeniem w sprzedaży B2B na 16 rynkach.</p></div>
+          </details>
+          <details class="glass">
+            <summary>Czy generujecie leady także dla firm B2C?</summary>
+            <div class="ans"><p>Tak. W modelu B2C przechwytujemy popyt dzięki landing page'om, kampaniom reklamowym i optymalizacji konwersji, a automatyzacja komunikacji pomaga zwiększać retencję i powtórne zakupy. Patrzymy na koszt pozyskania klienta, a nie na samą liczbę kliknięć, i stale testujemy oferty, kreacje oraz ścieżki zakupowe.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT FORM ============ -->
+    <section class="section contact" id="kontakt" aria-labelledby="contact-title">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="wrap contact-grid">
+        <div>
+          <p class="slate"><b>Akcja!</b> <i>/</i> Bezpłatna analiza</p>
+          <h2 class="display rv" id="contact-title">Uruchommy <span class="red">Twój silnik.</span></h2>
+          <p class="lead rv">6 pól, 60 sekund. Wrócimy z pierwszą diagnozą Twojego pozyskiwania klientów, a nie z ofertą z szablonu.</p>
+          <ul class="contact-points">
+            <li><b>01</b>Analizujemy Twoją firmę, rynek i obecne źródła leadów.</li>
+            <li><b>02</b>Umawiamy krótką rozmowę z founderem, bez prezentacji.</li>
+            <li><b>03</b>Dostajesz rekomendację: tor B2B, B2C albo oba, z realnym planem.</li>
+          </ul>
+          <p class="direct">Wolisz napisać bezpośrednio? <a href="mailto:michalmalek@hazeo.pl">michalmalek@hazeo.pl</a></p>
+        </div>
+
+        <div class="glass form" id="form-card">
+          <form id="lead-form" action="https://formsubmit.co/michalmalek@hazeo.pl" method="POST" novalidate>
+            <div class="form-head"><span><b>●</b> Zgłoszenie</span><span>Formularz · 1/1</span></div>
+
+            <input type="hidden" name="_subject" value="Nowe zgłoszenie z hazeo.pl – Hazeo Engine">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://www.test.hazeo.pl/dziekujemy.html">
+            <input type="hidden" name="pakiet" id="f-plan" value="">
+            <div class="hp" aria-hidden="true"><label>Nie wypełniaj <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+
+            <div class="fields">
+              <div class="field">
+                <label for="f-name">Imię</label>
+                <input id="f-name" name="imie" type="text" autocomplete="given-name" placeholder="np. Anna" required data-msg="Jak mamy się do Ciebie zwracać?">
+                <span class="err" id="e-name" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="f-email">Służbowy e-mail</label>
+                <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="anna@twojafirma.pl" required data-msg="Ten adres wygląda na niepełny. Sprawdź go jeszcze raz.">
+                <span class="err" id="e-email" aria-live="polite"></span>
+              </div>
+              <div class="field full">
+                <label for="f-company">Firma lub strona www</label>
+                <input id="f-company" name="firma" type="text" autocomplete="organization" placeholder="twojafirma.pl" required data-msg="Podaj nazwę firmy lub adres strony.">
+                <span class="err" id="e-company" aria-live="polite"></span>
+              </div>
+              <fieldset class="field full seg">
+                <legend>Kogo chcesz pozyskiwać?</legend>
+                <label><input type="radio" name="model" value="B2B" checked><span>Firmy (B2B)</span></label>
+                <label><input type="radio" name="model" value="B2C"><span>Klientów (B2C)</span></label>
+                <label><input type="radio" name="model" value="B2B + B2C"><span>Obie grupy</span></label>
+              </fieldset>
+              <div class="field">
+                <label for="f-budget">Miesięczny budżet na wzrost</label>
+                <select id="f-budget" name="budzet" required data-msg="Wybierz jedną opcję.">
+                  <option value="" selected disabled>Wybierz</option>
+                  <option>Do 4 000 zł</option>
+                  <option>4 000–9 000 zł</option>
+                  <option>9 000–18 000 zł</option>
+                  <option>Powyżej 18 000 zł</option>
+                  <option>Jeszcze nie wiem</option>
+                </select>
+                <span class="err" id="e-budget" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="f-challenge">Największe wyzwanie <span class="opt">(opcjonalnie)</span></label>
+                <select id="f-challenge" name="wyzwanie">
+                  <option value="" selected>Wybierz</option>
+                  <option>Za mało leadów</option>
+                  <option>Leady słabej jakości</option>
+                  <option>Outreach nie działa</option>
+                  <option>Brak procesu i CRM</option>
+                  <option>Potrzebuję strony lub landingu</option>
+                  <option>Inne</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="f-msg">Kontekst <span class="opt">(opcjonalnie)</span></label>
+                <textarea id="f-msg" name="wiadomosc" rows="3" placeholder="np. chcemy wejść na rynek DACH z ofertą dla producentów"></textarea>
+              </div>
+              <div class="field full">
+                <label class="consent">
+                  <input type="checkbox" id="f-consent" name="zgoda" value="tak" required data-msg="Potrzebujemy Twojej zgody, żeby odpowiedzieć.">
+                  <span>Zgadzam się na przetwarzanie moich danych przez HAZEO w celu odpowiedzi na zapytanie. Szczegóły w <a href="https://hazeo.pl/polityka-prywatnosci.html" target="_blank" rel="noopener">Polityce prywatności</a>.</span>
+                </label>
+                <span class="err" id="e-consent" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-foot">
+              <button class="btn btn-lg" type="submit" id="f-submit">Wyślij i odbierz analizę <span class="arr" aria-hidden="true">→</span></button>
+              <small>Odpowiadamy w ciągu 1 dnia roboczego. Bez spamu i bez zobowiązań.</small>
+            </div>
+            <div class="form-status" id="form-status" role="alert"></div>
+          </form>
+
+          <div class="success" id="form-success" hidden tabindex="-1">
+            <div class="check" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+            <h3>Mamy to. Silnik ruszył.</h3>
+            <p id="success-text">Dziękujemy. Przeanalizujemy Twoją firmę i odezwiemy się w ciągu 1 dnia roboczego z propozycją krótkiej rozmowy.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="foot">
-    <div class="wrap foot-inner">
-      <a class="brand" href="#top" aria-label="HAZEO, początek strony"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><rect x="12" y="12" width="8" height="40" fill="currentColor"/><rect x="44" y="22" width="8" height="30" fill="currentColor"/><rect x="44" y="12" width="8" height="10" fill="#74B8A0"/><path d="M20 34 L44 22 L44 30 L20 42 Z" fill="#CBA35C"/></svg><span class="brand-word">HAZEO</span></a>
-      <a href="mailto:michalmalek@hazeo.pl">michalmalek@hazeo.pl</a>
-      <a href="https://hazeo.pl/polityka-prywatnosci.html">Polityka prywatności</a>
-      <span class="muted">© HAZEO 2026</span>
+  <!-- ============ FOOTER: napisy końcowe ============ -->
+  <footer class="credits">
+    <div class="wrap">
+      <p class="the-end" aria-hidden="true">HAZEO<span>.</span></p>
+      <dl class="credit-rows">
+        <div><dt>Produkcja</dt><dd>HAZEO</dd></div>
+        <div><dt>W roli głównej</dt><dd>Hazeo Engine</dd></div>
+        <div><dt>Reżyseria</dt><dd>Michał Małek</dd></div>
+        <div><dt>Scenariusz i marka</dt><dd>Konrad Potocki</dd></div>
+        <div><dt>Kontakt</dt><dd><a href="mailto:michalmalek@hazeo.pl">michalmalek@hazeo.pl</a></dd></div>
+      </dl>
+      <div class="foot-line">
+        <a href="#silnik">Hazeo Engine</a>
+        <a href="#cennik">Cennik</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://hazeo.pl/polityka-prywatnosci.html">Polityka prywatności</a>
+        <span>© HAZEO 2026</span>
+      </div>
     </div>
   </footer>
 
+  <div class="vignette" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
-  <div class="curtain" id="curtain" aria-hidden="true"><span class="curtain-mark"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="12" y="12" width="8" height="40" fill="currentColor"/><rect x="44" y="22" width="8" height="30" fill="currentColor"/><rect x="44" y="12" width="8" height="10" fill="currentColor"/><path d="M20 34 L44 22 L44 30 L20 42 Z" fill="currentColor"/></svg></span></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-  <script src="motion.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="main.js" defer></script>
 </body>
 </html>
